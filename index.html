@@ -95,4 +95,988 @@
     .hero {
       background: linear-gradient(135deg, #0b132b 0%, #1c2541 50%, #0077b6 100%);
       color: #fff;
-      padding:
+      padding: 4.5rem 1.5rem;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .badge-uni {
+      display: inline-block;
+      background: rgba(0, 180, 216, 0.18);
+      border: 1px solid rgba(0, 180, 216, 0.45);
+      color: #90e0ef;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.5px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .hero p.subtitle {
+      font-size: 1.15rem;
+      color: #caf0f8;
+      max-width: 820px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem;
+      text-align: left;
+      margin-top: 2rem;
+    }
+
+    .hero-card {
+      background: rgba(11, 19, 43, 0.72);
+      border: 1px solid rgba(144, 224, 239, 0.25);
+      border-radius: 12px;
+      padding: 1.3rem;
+    }
+
+    .hero-card h3 {
+      color: var(--accent);
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-card p {
+      font-size: 0.92rem;
+      color: #f1f5f9;
+    }
+
+    .btn-cta {
+      display: inline-block;
+      margin-top: 2rem;
+      background: var(--accent);
+      color: #0b132b;
+      font-weight: 800;
+      padding: 0.85rem 1.8rem;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(0, 180, 216, 0.35);
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      background: #90e0ef;
+    }
+
+    /* CONTENEDOR GENERAL DE SECCIONES */
+    section {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: #caf0f8;
+      color: #0077b6;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    h2.section-title {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    p.section-desc {
+      color: var(--muted);
+      max-width: 840px;
+      margin-bottom: 2rem;
+      font-size: 1.03rem;
+    }
+
+    /* GRILLAS Y TARJETAS */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 0.6rem;
+      font-size: 1.15rem;
+    }
+
+    .card ul {
+      padding-left: 1.2rem;
+      color: var(--text);
+    }
+
+    .card li {
+      margin-bottom: 0.45rem;
+    }
+
+    .question-box {
+      background: linear-gradient(90deg, #e0f2fe, #fef3c7);
+      border-left: 5px solid var(--secondary);
+      padding: 1.4rem;
+      border-radius: 10px;
+      margin: 1.8rem 0;
+    }
+
+    .question-box strong {
+      color: var(--primary);
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: 1.05rem;
+    }
+
+    /* ÁRBOL DE PROBLEMAS */
+    .tree-container {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .tree-level {
+      padding: 1rem;
+      border-radius: 10px;
+      margin: 0.8rem auto;
+      max-width: 920px;
+    }
+
+    .tree-effects {
+      background: #fef2f2;
+      border: 2px solid #fca5a5;
+    }
+
+    .tree-problem {
+      background: #fffbeb;
+      border: 2px solid #f59e0b;
+      font-weight: 700;
+    }
+
+    .tree-causes {
+      background: #ecfdf5;
+      border: 2px solid #6ee7b7;
+    }
+
+    .tree-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-top: 0.6rem;
+    }
+
+    .pill {
+      background: #fff;
+      padding: 0.45rem 0.85rem;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
+
+    /* ENFOQUE SISTÉMICO INTERACTIVO */
+    .system-diagram {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+      gap: 1rem;
+      align-items: stretch;
+      margin-top: 1.5rem;
+    }
+
+    .sys-block {
+      background: #fff;
+      border: 2px solid var(--secondary);
+      border-radius: 12px;
+      padding: 1.2rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .sys-block:hover, .sys-block.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .sys-block h4 {
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+    }
+
+    .sys-block.active h4, .sys-block:hover h4 {
+      color: var(--accent);
+    }
+
+    .sys-detail-panel {
+      background: var(--primary);
+      color: #f8fafc;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-top: 1.2rem;
+      border-left: 5px solid var(--accent);
+    }
+
+    /* SIMULADOR INTERACTIVO IOT */
+    .simulator-box {
+      background: linear-gradient(135deg, #0b132b, #1c2541);
+      color: #fff;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-top: 2rem;
+      box-shadow: 0 12px 28px rgba(11, 19, 43, 0.2);
+      border: 1px solid #334155;
+    }
+
+    .sim-controls {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.2rem;
+      margin: 1.5rem 0;
+    }
+
+    .control-card {
+      background: rgba(255, 255, 255, 0.06);
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .control-card label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .control-card input[type="range"] {
+      width: 100%;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+
+    .sim-output {
+      margin-top: 1.5rem;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(0, 180, 216, 0.3);
+      border-radius: 12px;
+      padding: 1.3rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+    }
+
+    .metric-box {
+      background: rgba(11, 19, 43, 0.85);
+      padding: 1rem;
+      border-radius: 10px;
+      border-left: 4px solid var(--accent);
+    }
+
+    .metric-box span {
+      display: block;
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
+
+    .metric-box strong {
+      font-size: 1.15rem;
+      color: #fff;
+    }
+
+    .status-on {
+      color: #10b981 !important;
+    }
+
+    .status-alert {
+      color: #ef4444 !important;
+    }
+
+    .status-warn {
+      color: #f59e0b !important;
+    }
+
+    .media-caption {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 0.6rem;
+      font-style: italic;
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      background: #0b132b;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* QUIZ INTERACTIVO */
+    .quiz-option {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 0.6rem;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .quiz-option:hover {
+      background: #e0f2fe;
+      border-color: var(--secondary);
+    }
+
+    /* MÉTODO CIENTÍFICO (6 PASOS) */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .step-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--secondary);
+      border-radius: 12px;
+      padding: 1.3rem;
+    }
+
+    .step-number {
+      display: inline-block;
+      background: var(--secondary);
+      color: #fff;
+      font-weight: 800;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+
+    /* TABLA INDUSTRIA 4.0 */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.92rem;
+    }
+
+    tr:hover td {
+      background: #f8fafc;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--primary);
+      color: #cbd5e1;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    footer strong {
+      color: #fff;
+    }
+
+    .team-box {
+      background: rgba(255, 255, 255, 0.08);
+      max-width: 850px;
+      margin: 1rem auto;
+      padding: 1rem 1.2rem;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 180, 216, 0.35);
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header>
+    <div class="nav-container">
+      <a href="#inicio" class="brand">📡 IoT-<span>GuajiraSense</span></a>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#problema">Problema</a></li>
+          <li><a href="#innovacion">Innovación IoT</a></li>
+          <li><a href="#sistemico">Enfoque Sistémico</a></li>
+          <li><a href="#multimedia">Multimedia y Simulador</a></li>
+          <li><a href="#cientifico">Método Científico</a></li>
+          <li><a href="#industria40">Industria 4.0</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECCIÓN A: PÁGINA PRINCIPAL (HOME) -->
+  <div id="inicio" class="hero">
+    <div class="hero-content">
+      <div class="badge-uni">UNIVERSIDAD DE LA GUAJIRA • FACULTAD DE INGENIERÍA • INGENIERÍA DE SISTEMAS</div>
+      <h1>IoT-GuajiraSense: Red de Internet de las Cosas para la Gestión Hídrica y Ambiental</h1>
+      <p class="subtitle">
+        Arquitectura de sensores inteligentes, telemetría en tiempo real y automatización de actuadores diseñada para optimizar el uso del agua y el monitoreo climático en entornos académicos, urbanos y rurales de La Guajira.
+      </p>
+
+      <div class="hero-cards">
+        <div class="hero-card">
+          <h3>Tema Seleccionado</h3>
+          <p><strong>Internet de las Cosas (IoT)</strong> aplicado a la Ingeniería de Sistemas, Innovación Tecnológica e Industria 4.0.</p>
+        </div>
+        <div class="hero-card">
+          <h3>Introducción a la Problemática</h3>
+          <p>En La Guajira, el monitoreo manual de reservorios de agua, sistemas de riego y condiciones microclimáticas provoca desperdicio hídrico, fugas no detectadas y pérdidas en cultivos y espacios institucionales.</p>
+        </div>
+        <div class="hero-card">
+          <h3>Objetivo de la Propuesta</h3>
+          <p>Diseñar y desarrollar una plataforma web conectada a nodos IoT (sensores y actuadores) que automatice el control del agua y genere alertas tempranas mediante principios de pensamiento sistémico.</p>
+        </div>
+      </div>
+
+      <a href="#multimedia" class="btn-cta">Probar Simulador de Sensores IoT en Vivo ↓</a>
+    </div>
+  </div>
+
+  <!-- SECCIÓN B: ANÁLISIS DEL PROBLEMA -->
+  <section id="problema">
+    <span class="section-tag">Sección B • Diagnóstico</span>
+    <h2 class="section-title">Identificación y Análisis del Problema</h2>
+    <p class="section-desc">
+      El Internet de las Cosas (IoT) permite conectar objetos físicos a internet para recopilar datos y actuar de forma autónoma. Su ausencia en procesos cotidianos de nuestro entorno genera ineficiencias críticas.
+    </p>
+
+    <div class="question-box">
+      <strong>Pregunta Orientadora / de Investigación:</strong>
+      ¿Cómo puede una red de dispositivos basados en Internet de las Cosas (IoT) reducir el desperdicio de agua, automatizar el riego y mejorar la toma de decisiones ambientales en tiempo real en el departamento de La Guajira?
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>Situación Identificada</h3>
+        <p>
+          Tanto en campus universitarios (como zonas verdes y tanques de almacenamiento) como en parcelas agrícolas y viviendas de Riohacha, la medición del nivel de agua, humedad del suelo y temperatura se realiza de forma manual y reactiva. Esto ocasiona desbordamientos en albercas/tanques, riego excesivo en horas de alta evaporación y detección tardía de fallas en motobombas.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Población Beneficiada e Importancia</h3>
+        <ul>
+          <li><strong>Comunidad universitaria y administrativa:</strong> Optimiza el mantenimiento de áreas verdes y evita el desabastecimiento en tanques de almacenamiento.</li>
+          <li><strong>Pequeños productores agrícolas y comunidades rurales:</strong> Ahorran agua mediante riego automatizado según la humedad real del suelo.</li>
+          <li><strong>Medio ambiente regional:</strong> Reduce la huella hídrica y energética en una región con alta vulnerabilidad climática.</li>
+          <li><strong>Importancia:</strong> Democratiza la automatización industrial mediante hardware abierto y accesible.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ÁRBOL DE PROBLEMAS GRÁFICO -->
+    <div class="tree-container">
+      <h3>Árbol de Problemas: Gestión Manual vs. Necesidad de IoT</h3>
+      <p style="font-size: 0.9rem; color: var(--muted);">Representación gráfica de causas estructurales, problema central y consecuencias</p>
+
+      <div class="tree-level tree-effects">
+        <strong style="color: var(--danger);">CONSECUENCIAS / EFECTOS (Ramas)</strong>
+        <div class="tree-pills">
+          <span class="pill">Desperdicio de agua potable y de riego por desbordamientos</span>
+          <span class="pill">Sobrecostos en energía eléctrica por bombeo innecesario</span>
+          <span class="pill">Estrés hídrico y pérdida de cobertura vegetal o cultivos</span>
+          <span class="pill">Toma de decisiones tardía por falta de datos históricos</span>
+        </div>
+      </div>
+
+      <div style="font-size: 1.4rem; color: var(--muted);">▲</div>
+
+      <div class="tree-level tree-problem">
+        <span style="color: #b45309;">PROBLEMA CENTRAL (Tronco):</span><br>
+        Ausencia de sistemas automatizados de monitoreo y control en tiempo real (Internet de las Cosas - IoT) para la gestión eficiente del recurso hídrico y las variables ambientales en el entorno local.
+      </div>
+
+      <div style="font-size: 1.4rem; color: var(--muted);">▲</div>
+
+      <div class="tree-level tree-causes">
+        <strong style="color: var(--success);">CAUSAS PRINCIPALES (Raíces)</strong>
+        <div class="tree-pills">
+          <span class="pill">Medición manual y empírica de niveles y humedad</span>
+          <span class="pill">Desconexión entre infraestructura física y redes digitales</span>
+          <span class="pill">Carencia de sensores y actuadores de bajo costo</span>
+          <span class="pill">Falta de sistemas de alerta temprana ante fugas o sequía</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN C: INNOVACIÓN -->
+  <section id="innovacion">
+    <span class="section-tag">Sección C • Propuesta Tecnológica</span>
+    <h2 class="section-title">Solución Innovadora: Arquitectura IoT-GuajiraSense</h2>
+    <p class="section-desc">
+      IoT-GuajiraSense propone una red de nodos inteligentes de bajo consumo energético que conectan el mundo físico con una plataforma web de visualización y control automático.
+    </p>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>1. Nodos Sensores Inteligentes</h3>
+        <p>
+          Microcontroladores <strong>ESP32</strong> equipados con sensores ultrasónicos (nivel de agua en tanques), sensores capacitivos de humedad del suelo, caudalímetros (detección de fugas) y sensores DHT22 (temperatura y humedad relativa).
+        </p>
+      </div>
+      <div class="card">
+        <h3>2. Conectividad Híbrida (Wi-Fi / LoRa)</h3>
+        <p>
+          Transmisión de paquetes de datos ligeros mediante el protocolo <strong>MQTT</strong>. En zonas urbanas usa Wi-Fi convencional y en zonas rurales sin cobertura celular emplea enlaces de largo alcance <strong>LoRaWAN</strong> alimentados por paneles solares.
+        </p>
+      </div>
+      <div class="card">
+        <h3>3. Actuadores Autónomos</h3>
+        <p>
+          Electroválvulas solenoides y relés industriales que abren o cierran el paso del agua automáticamente según las reglas lógicas definidas en la plataforma, sin requerir intervención humana constante.
+        </p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 1.5rem; border-left: 5px solid var(--secondary);">
+      <h3>¿Cómo funciona la solución paso a paso?</h3>
+      <p>
+        <strong>1. Captura (Capa Física):</strong> Los sensores leen variables cada 10 segundos. 
+        <strong>2. Transmisión (Capa de Red):</strong> El microcontrolador envía los datos vía MQTT al servidor en la nube. 
+        <strong>3. Decisión y Acción (Capa de Aplicación):</strong> Si el tanque baja del 20%, el sistema enciende la motobomba; cuando llega al 95%, la apaga automáticamente y actualiza el panel web en tiempo real.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN D: ENFOQUE SISTÉMICO -->
+  <section id="sistemico">
+    <span class="section-tag">Sección D • Teoría General de Sistemas</span>
+    <h2 class="section-title">Enfoque Sistémico del Ecosistema IoT</h2>
+    <p class="section-desc">
+      Desde la Ingeniería de Sistemas, IoT-GuajiraSense opera como un <strong>sistema cibernético de lazo cerrado</strong> que intercambia materia, energía e información con su entorno. <strong>Haz clic en cada bloque para explorar sus detalles:</strong>
+    </p>
+
+    <div class="system-diagram">
+      <div class="sys-block active" onclick="mostrarDetalleSistema('entradas', this)">
+        <h4>1. ENTRADAS (Inputs)</h4>
+        <p>Señales físicas de sensores (humedad, nivel, temperatura, caudal) y umbrales del usuario.</p>
+      </div>
+      <div class="sys-block" onclick="mostrarDetalleSistema('procesos', this)">
+        <h4>2. PROCESOS</h4>
+        <p>Conversión analógica-digital, enrutamiento MQTT, análisis de reglas y control lógico.</p>
+      </div>
+      <div class="sys-block" onclick="mostrarDetalleSistema('salidas', this)">
+        <h4>3. SALIDAS (Outputs)</h4>
+        <p>Activación de electroválvulas/bombas, alertas críticas y gráficas de telemetría.</p>
+      </div>
+      <div class="sys-block" onclick="mostrarDetalleSistema('componentes', this)">
+        <h4>4. COMPONENTES</h4>
+        <p>Sensores, ESP32, Gateway LoRa/Wi-Fi, Broker MQTT, Base de Datos y Dashboard Web.</p>
+      </div>
+      <div class="sys-block" onclick="mostrarDetalleSistema('entorno', this)">
+        <h4>5. ENTORNO Y FEEDBACK</h4>
+        <p>Clima de La Guajira, red hídrica y retroalimentación continua en tiempo real.</p>
+      </div>
+    </div>
+
+    <div id="sys-panel" class="sys-detail-panel">
+      <strong>Detalle de Entradas (Inputs):</strong> El sistema captura magnitudes físicas del entorno (porcentaje de humedad en la raíz, centímetros de altura del agua en el tanque, litros por minuto en tuberías y grados Celsius) junto con los parámetros de configuración ingresados por el administrador en el portal web.
+    </div>
+  </section>
+
+  <!-- SECCIÓN E: GALERÍA MULTIMEDIA Y ELEMENTOS INTERACTIVOS -->
+  <section id="multimedia">
+    <span class="section-tag">Sección E • Recursos Digitales e Interactividad</span>
+    <h2 class="section-title">Galería Multimedia y Simulador de Nodos IoT</h2>
+    <p class="section-desc">
+      Esquema de arquitectura de cuatro capas IoT, material audiovisual explicativo y simulador funcional donde puedes modificar lecturas de sensores y observar la respuesta automática del sistema.
+    </p>
+
+    <div class="grid-2">
+      <!-- INFOGRAFÍA SVG PROPIA DE ARQUITECTURA IOT -->
+      <div class="card">
+        <h3>Infografía: Arquitectura de 4 Capas del Sistema IoT</h3>
+        <svg viewBox="0 0 500 290" width="100%" style="background:#f8fafc; border-radius:10px; margin-top:0.5rem; border:1px solid #e2e8f0;">
+          <rect x="15" y="12" width="470" height="38" rx="8" fill="#0b132b"/>
+          <text x="250" y="36" fill="#00b4d8" font-size="14" font-weight="bold" text-anchor="middle">ARQUITECTURA IOT-GUAJIRASENSE (FLUJO DE DATOS)</text>
+          
+          <!-- Capa 1 -->
+          <rect x="25" y="62" width="450" height="44" rx="8" fill="#0077b6"/>
+          <text x="250" y="82" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">1. CAPA DE PERCEPCIÓN (Hardware)</text>
+          <text x="250" y="98" fill="#caf0f8" font-size="11" text-anchor="middle">Sensores de Nivel, Humedad, Temperatura + Microcontrolador ESP32 + Actuadores</text>
+
+          <!-- Capa 2 -->
+          <rect x="25" y="116" width="450" height="44" rx="8" fill="#0096c7"/>
+          <text x="250" y="136" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">2. CAPA DE RED Y TRANSPORTE</text>
+          <text x="250" y="152" fill="#caf0f8" font-size="11" text-anchor="middle">Conectividad Wi-Fi / LoRaWAN + Protocolo ligero MQTT / HTTP</text>
+
+          <!-- Capa 3 -->
+          <rect x="25" y="170" width="450" height="44" rx="8" fill="#00b4d8"/>
+          <text x="250" y="190" fill="#0b132b" font-size="13" font-weight="bold" text-anchor="middle">3. CAPA DE PROCESAMIENTO (Nube)</text>
+          <text x="250" y="206" fill="#0b132b" font-size="11" text-anchor="middle">Broker MQTT + Base de Datos de Series de Tiempo + Motor de Reglas</text>
+
+          <!-- Capa 4 -->
+          <rect x="25" y="224" width="450" height="52" rx="8" fill="#10b981"/>
+          <text x="250" y="245" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">4. CAPA DE APLICACIÓN E IMPACTO</text>
+          <text x="250" y="262" fill="#ecfdf5" font-size="11" text-anchor="middle">Dashboard Web • Alertas • Ahorro del 38% de agua y 0% desbordamientos</text>
+        </svg>
+        <p class="media-caption">Fuente: Elaboración propia — Ernesto Nicolas Móvil Gamez, Carlos Enrique Montaño Sarmiento y Carlos Camilo Pedraza Van-Grieken (Ingeniería de Sistemas, UniGuajira, 2026).</p>
+      </div>
+
+      <!-- VIDEO EXTERNO CON CITACIÓN DE FUENTE -->
+      <div class="card">
+        <h3>Video Explicativo: ¿Qué es el Internet de las Cosas (IoT)?</h3>
+        <div class="video-wrapper" style="margin-top: 0.5rem;">
+          <iframe src="https://www.youtube.com/embed/QSIPNhOiMoE" title="Qué es el Internet de las Cosas (IoT)" allowfullscreen></iframe>
+        </div>
+        <p class="media-caption">
+          Fuente externa: Recurso audiovisual educativo en YouTube sobre funcionamiento y aplicaciones del Internet de las Cosas (IoT).
+        </p>
+      </div>
+    </div>
+
+    <!-- ELEMENTO INTERACTIVO 1: SIMULADOR IOT EN TIEMPO REAL -->
+    <div class="simulator-box">
+      <h3>🎛️ Simulador Interactivo en Vivo: Controlador de Nodos IoT</h3>
+      <p style="color: #cbd5e1; font-size: 0.95rem;">
+        Desliza los controles para simular las lecturas físicas de los sensores en campo y observa cómo el sistema IoT toma decisiones automáticas sobre los actuadores en tiempo real:
+      </p>
+
+      <div class="sim-controls">
+        <div class="control-card">
+          <label for="slider-tanque">
+            <span>💧 Nivel Tanque de Agua:</span>
+            <span id="val-tanque" style="color: #00b4d8;">65%</span>
+          </label>
+          <input type="range" id="slider-tanque" min="0" max="100" value="65" oninput="actualizarSimuladorIoT()" />
+        </div>
+
+        <div class="control-card">
+          <label for="slider-humedad">
+            <span>🌱 Humedad del Suelo:</span>
+            <span id="val-humedad" style="color: #00b4d8;">45%</span>
+          </label>
+          <input type="range" id="slider-humedad" min="0" max="100" value="45" oninput="actualizarSimuladorIoT()" />
+        </div>
+
+        <div class="control-card">
+          <label for="slider-temp">
+            <span>🌡️ Temperatura Ambiental:</span>
+            <span id="val-temp" style="color: #00b4d8;">32 °C</span>
+          </label>
+          <input type="range" id="slider-temp" min="18" max="45" value="32" oninput="actualizarSimuladorIoT()" />
+        </div>
+      </div>
+
+      <div class="sim-output">
+        <div class="metric-box">
+          <span>Actuador 1: Motobomba Principal</span>
+          <strong id="estado-bomba">EN ESPERA (Nivel Óptimo)</strong>
+        </div>
+        <div class="metric-box">
+          <span>Actuador 2: Electroválvula de Riego</span>
+          <strong id="estado-valvula">CERRADA (Humedad Estable)</strong>
+        </div>
+        <div class="metric-box">
+          <span>Estado de Alerta del Sistema</span>
+          <strong id="estado-alerta" class="status-on">NORMAL • TELEMETRÍA OK</strong>
+        </div>
+        <div class="metric-box" style="grid-column: 1 / -1;">
+          <span>Log de Automatización MQTT (Acción del Sistema):</span>
+          <p id="log-iot" style="color: #e2e8f0; margin-top: 0.3rem; font-size: 0.93rem;">
+            [MQTT /guajira/nodo01]: Parámetros dentro de los rangos ideales. Consumo hídrico optimizado y ahorro energético activo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ELEMENTO INTERACTIVO 2: QUIZ DE SUSTENTACIÓN -->
+    <div class="card" style="margin-top: 1.5rem;">
+      <h3>🧠 Verificación Interactiva: Arquitectura IoT y Enfoque Sistémico</h3>
+      <p style="margin-bottom: 1rem;">Pregunta clave de sustentación: <strong>Cuando el sensor ultrasónico detecta que el tanque llegó al 95% y el microcontrolador ordena apagar la motobomba para evitar desbordamientos, ¿qué principio sistémico se está ejecutando?</strong></p>
+      <button class="quiz-option" onclick="verificarQuiz(false)">A) Entropía máxima del sistema sin control externo.</button>
+      <button class="quiz-option" onclick="verificarQuiz(true)">B) Retroalimentación negativa (Feedback de control), donde la salida medida regula la entrada para mantener el equilibrio del sistema.</button>
+      <button class="quiz-option" onclick="verificarQuiz(false)">C) Aislamiento total del sistema frente al entorno físico.</button>
+      <p id="quiz-feedback" style="margin-top: 0.8rem; font-weight: 700;"></p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN F: MÉTODO CIENTÍFICO (6 PASOS) -->
+  <section id="cientifico">
+    <span class="section-tag">Sección F • Rigor Investigativo</span>
+    <h2 class="section-title">Aplicación de los 6 Pasos del Método Científico</h2>
+    <p class="section-desc">
+      El desarrollo de IoT-GuajiraSense siguió rigurosamente las etapas del método científico para validar la pertinencia técnica y ambiental de la propuesta:
+    </p>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <h3><span class="step-number">1</span>Observación</h3>
+        <p>Se observó en entornos académicos y agrícolas de Riohacha que el llenado de tanques y el riego de plantas se realizan de manera manual, provocando frecuentes desbordamientos de agua y riego en horas de máxima evaporación solar.</p>
+      </div>
+      <div class="step-card">
+        <h3><span class="step-number">2</span>Planteamiento del Problema</h3>
+        <p>Se formuló la necesidad de eliminar el desperdicio hídrico y la falta de monitoreo en tiempo real mediante una arquitectura accesible basada en Internet de las Cosas (IoT).</p>
+      </div>
+      <div class="step-card">
+        <h3><span class="step-number">3</span>Formulación de Hipótesis</h3>
+        <p><em>"Si se implementa una red de nodos IoT con sensores de nivel y humedad conectados a actuadores automáticos y a una plataforma web, entonces se reducirá el desperdicio de agua en más de un 35% y se evitarán desbordamientos en reservorios."</em></p>
+      </div>
+      <div class="step-card">
+        <h3><span class="step-number">4</span>Experimentación</h3>
+        <p>Se diseñó el modelo lógico y este prototipo web interactivo con simulación de telemetría MQTT, sometiendo los algoritmos de control a escenarios críticos de sequía (humedad < 25%), tanque vacío (< 20%) y tanque lleno (≥ 90%).</p>
+      </div>
+      <div class="step-card">
+        <h3><span class="step-number">5</span>Análisis de Resultados</h3>
+        <p>Los ensayos demostraron que la respuesta automatizada ante umbrales elimina el error humano por descuido, reduce los tiempos de encendido de motobombas y concentra el riego únicamente cuando el suelo lo requiere.</p>
+      </div>
+      <div class="step-card">
+        <h3><span class="step-number">6</span>Conclusiones</h3>
+        <p>Se comprobó la hipótesis: el Internet de las Cosas (IoT) aplicado con pensamiento sistémico constituye una solución altamente viable, económica y sostenible para optimizar recursos vitales en La Guajira.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 1.5rem; background: #e0f2fe; border-color: #7dd3fc;">
+      <h3>Contribución del Método Científico al Proyecto</h3>
+      <p>
+        Aplicar los seis pasos garantizó que cada sensor y regla de automatización respondiera a una variable medible del problema real, transformando una idea tecnológica en una solución ingenieril comprobable.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN G: INDUSTRIA 4.0 -->
+  <section id="industria40">
+    <span class="section-tag">Sección G • Ecosistema Tecnológico</span>
+    <h2 class="section-title">Tecnologías de la Industria 4.0 Relacionadas con IoT</h2>
+    <p class="section-desc">
+      El Internet de las Cosas (IoT) es uno de los pilares centrales de la Industria 4.0 y potencia sus capacidades al integrarse con otras tecnologías emergentes:
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Tecnología Industria 4.0</th>
+          <th>Relación con el Proyecto IoT</th>
+          <th>Cómo Mejora la Solución Propuesta</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Computación en la Nube (Cloud)</strong></td>
+          <td>Aloja el servidor MQTT, las bases de datos históricas y la plataforma web accesible desde cualquier navegador.</td>
+          <td>Permite monitorear y controlar los tanques y cultivos de forma remota desde cualquier lugar del mundo las 24 horas.</td>
+        </tr>
+        <tr>
+          <td><strong>Big Data y Analítica de Datos</strong></td>
+          <td>Almacena millones de registros periódicos de temperatura, humedad y consumo de agua generados por los sensores.</td>
+          <td>Identifica patrones estacionales de sequía y fugas silenciosas en tuberías mediante análisis estadístico.</td>
+        </tr>
+        <tr>
+          <td><strong>Inteligencia Artificial y Edge Computing</strong></td>
+          <td>Procesa datos localmente en el microcontrolador (Edge) y entrena modelos predictivos de demanda hídrica.</td>
+          <td>Permite que el sistema siga operando incluso si falla internet y anticipe cuándo regar antes de que el suelo se seque.</td>
+        </tr>
+        <tr>
+          <td><strong>Gemelos Digitales (Digital Twins)</strong></td>
+          <td>Representación virtual en tiempo real del estado físico de los reservorios y redes de riego en la interfaz web.</td>
+          <td>Facilita la simulación de fallas y el mantenimiento preventivo sin necesidad de desplazarse físicamente a cada nodo.</td>
+        </tr>
+        <tr>
+          <td><strong>Ciberseguridad IoT</strong></td>
+          <td>Cifrado TLS y autenticación por tokens para cada microcontrolador ESP32 conectado a la red.</td>
+          <td>Protege los actuadores contra accesos no autorizados que pudieran abrir válvulas o manipular lecturas maliciosamente.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p><strong>UNIVERSIDAD DE LA GUAJIRA — FACULTAD DE INGENIERÍA</strong></p>
+    <p>Programa de Ingeniería de Sistemas • Asignatura: Introducción a la Ingeniería de Sistemas</p>
+    <p>Docente: <strong>Ing. Mg. Rafael E. Griego Barros</strong></p>
+    
+    <div class="team-box">
+      <strong>Integrantes del Grupo:</strong><br>
+      1. Ernesto Nicolas Móvil Gamez<br>
+      2. Carlos Enrique Montaño Sarmiento<br>
+      3. Carlos Camilo Pedraza Van-Grieken
+    </div>
+    <p style="font-size: 0.8rem; color: #94a3b8; margin-top: 0.8rem;">
+      Proyecto Final: Sitio Web Innovador con Integración Multimedia: Ingeniería, Innovación e Industria 4.0 (Tema: Internet de las Cosas - IoT) • 2026
+    </p>
+  </footer>
+
+  <!-- LÓGICA JAVASCRIPT PARA INTERACTIVIDAD -->
+  <script>
+    // 1. Interactividad del Diagrama Sistémico
+    function mostrarDetalleSistema(clave, elemento) {
+      document.querySelectorAll('.sys-block').forEach(b => b.classList.remove('active'));
+      elemento.classList.add('active');
+
+      const detalles = {
+        entradas: "<strong>Detalle de Entradas (Inputs):</strong> El sistema captura magnitudes físicas del entorno (porcentaje de humedad en la raíz, centímetros de altura del agua en el tanque, litros por minuto en tuberías y grados Celsius) junto con los parámetros de configuración ingresados por el administrador en el portal web.",
+        procesos: "<strong>Detalle de Procesos:</strong> El microcontrolador ESP32 convierte las señales analógicas en datos digitales, los empaqueta mediante protocolo MQTT y el motor lógico compara los valores leídos contra los umbrales críticos establecidos para decidir si activa o detiene un actuador.",
+        salidas: "<strong>Detalle de Salidas (Outputs):</strong> Emisión de señales eléctricas hacia relés y electroválvulas (apertura/cierre físico del agua), generación de notificaciones visuales en pantalla y almacenamiento de métricas de ahorro hídrico.",
+        componentes: "<strong>Detalle de Componentes del Sistema:</strong> Subsistema de Percepción (sensores ultrasónicos, capacitivos y DHT22), Subsistema de Actuación (motobombas y electroválvulas), Subsistema de Comunicación (Wi-Fi/LoRaWAN y broker MQTT) y Subsistema de Usuario (interfaz web).",
+        entorno: "<strong>Interacción con el Entorno y Retroalimentación:</strong> El sistema opera bajo condiciones reales de alta radiación solar y evaporación en La Guajira. Gracias al lazo cerrado de retroalimentación, los efectos físicos producidos por los actuadores (subida de nivel o humedad) son leídos inmediatamente por los sensores para detener el proceso en el punto exacto."
+      };
+
+      document.getElementById('sys-panel').innerHTML = detalles[clave];
+    }
+
+    // 2. Simulador Interactivo IoT en Tiempo Real
+    function actualizarSimuladorIoT() {
+      const tanque = parseInt(document.getElementById('slider-tanque').value);
+      const humedad = parseInt(document.getElementById('slider-humedad').value);
+      const temp = parseInt(document.getElementById('slider-temp').value);
+
+      document.getElementById('val-tanque').textContent = tanque + "%";
+      document.getElementById('val-humedad').textContent = humedad + "%";
+      document.getElementById('val-temp').textContent = temp + " °C";
+
+      const elBomba = document.getElementById('estado-bomba');
+      const elValvula = document.getElementById('estado-valvula');
+      const elAlerta = document.getElementById('estado-alerta');
+      const elLog = document.getElementById('log-iot');
+
+      let mensajesLog = [];
+      let nivelAlerta = "normal";
+
+      // Lógica Actuador 1: Nivel del tanque
+      if (tanque <= 20) {
+        elBomba.textContent = "ENCENDIDA (Llenando Tanque)";
+        elBomba.className = "status-on";
+        mensajesLog.push(`Nivel crítico bajo (${tanque}%): Motobomba activada automáticamente.`);
+        nivelAlerta = "warn";
+      } else if (tanque >= 90) {
+        elBomba.textContent = "APAGADA (Corte Anti-Desborde)";
+        elBomba.className = "status-alert";
+        mensajesLog.push(`Nivel máximo alcanzado (${tanque}%): Motobomba bloqueada para evitar desperdicio.`);
+      } else {
+        elBomba.textContent = "EN ESPERA (Nivel Óptimo)";
+        elBomba.className = "";
+      }
+
+      // Lógica Actuador 2: Humedad del suelo y temperatura
+      if (humedad < 30 && tanque > 10) {
+        elValvula.textContent = "ABIERTA (Riego Activo)";
+        elValvula.className = "status-on";
+        mensajesLog.push(`Suelo seco (${humedad}%): Electroválvula de riego por goteo abierta.`);
+        if (nivelAlerta === "normal") nivelAlerta = "warn";
+      } else if (humedad < 30 && tanque <= 10) {
+        elValvula.textContent = "BLOQUEADA (Reserva Insuficiente)";
+        elValvula.className = "status-alert";
+        mensajesLog.push(`Suelo seco (${humedad}%), pero tanque sin reserva (${tanque}%). Priorizando abastecimiento.`);
+        nivelAlerta = "alert";
+      } else {
+        elValvula.textContent = "CERRADA (Humedad Suficiente)";
+        elValvula.className = "";
+      }
+
+      // Lógica Temperatura
+      if (temp >= 38) {
+        mensajesLog.push(`Alerta térmica (${temp} °C): Alta evaporación detectada; riego ajustado a micro-pulsos.`);
+        nivelAlerta = "alert";
+      }
+
+      // Estado general de alerta
+      if (nivelAlerta === "alert") {
+        elAlerta.textContent = "ALERTA CRÍTICA • ACCIÓN AUTOMÁTICA";
+        elAlerta.className = "status-alert";
+      } else if (nivelAlerta === "warn") {
+        elAlerta.textContent = "ACTUACIÓN EN CURSO • CONTROL ACTIVO";
+        elAlerta.className = "status-warn";
+      } else {
+        elAlerta.textContent = "NORMAL • TELEMETRÍA ESTABLE";
+        elAlerta.className = "status-on";
+        mensajesLog.push("Todos los sensores dentro de los rangos ideales. Ahorro hídrico y energético activo.");
+      }
+
+      elLog.textContent = "[MQTT /guajira/nodo01]: " + mensajesLog.join(" | ");
+    }
+
+    // 3. Quiz Interactivo de Sustentación
+    function verificarQuiz(esCorrecta) {
+      const feedback = document.getElementById('quiz-feedback');
+      if (esCorrecta) {
+        feedback.style.color = "#10b981";
+        feedback.textContent = "✅ ¡Correcto! En un sistema IoT de lazo cerrado, la retroalimentación permite que la medición de salida regule automáticamente los actuadores para evitar desperdicios.";
+      } else {
+        feedback.style.color = "#ef4444";
+        feedback.textContent = "❌ Incorrecto. Recuerda que en la Teoría General de Sistemas, el mecanismo por el cual la salida del sistema regula su comportamiento es la Retroalimentación.";
+      }
+    }
+  </script>
+
+</body>
+</html>
